@@ -16,7 +16,13 @@ interface ILogger {
     setLevel: (value: LoggerLevels) => void;
 }
 declare class LoggerProviderClass {
+    /**
+     * Sets the level of messages to output for the specified type/class.
+     */
     setLevel: <T>(caller: T, level: LoggerLevels) => void;
+    /**
+     * Instanciates or returns cached logger for the `caller` type/class.
+     */
     getLogger: <T>(caller: T) => ILogger;
     setDefaultLevel: (value: LoggerLevels) => void;
     constructor();
