@@ -1,5 +1,5 @@
 {
-  "name": "gooder-console",
+  "name": "gooder-console-logger",
   "version": "0.1.0",
   "description": "Same as browser console but gooder. Configure message log levels (log, errors, mute) for individual classes or for the whole project.",
   "main": "./assembly/logger.js",
