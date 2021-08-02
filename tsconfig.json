@@ -1,0 +1,45 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"lib": [
+			"es2017",
+			"dom"
+		],
+		"skipLibCheck": true,
+		"strict": false,
+		"strictNullChecks": false,
+		"strictPropertyInitialization": false,
+		"strictBindCallApply": true,
+		"alwaysStrict": true,
+		"strictFunctionTypes": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": false,
+		"sourceMap": false,
+		"target": "es6",
+		"allowJs": false,
+		"extendedDiagnostics": true,
+		"typeRoots": [
+			"./@types",
+			"./node_modules/@types"
+		],
+		"outDir": "assembly",
+		"declaration": true
+	},
+	"include": [
+		"sources/**/*",
+		"@types/**/*",
+		"@types"
+	],
+	"exclude": [
+		"node_modules",
+		"./node_modules/*"
+	]
+}
