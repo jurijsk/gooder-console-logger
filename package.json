@@ -1,6 +1,6 @@
 {
   "name": "gooder-console-logger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Same as browser console but gooder. Configure message log levels (log, errors, mute) for individual classes or for the whole project.",
   "main": "./assembly/logger.js",
   "types": "./assembly/logger.d.ts",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jurijsk/gooder-console-logger.git"
+    "url": "git://github.com/jurijsk/gooder-console-logger.git"
   },
   "keywords": [
     "browser",
