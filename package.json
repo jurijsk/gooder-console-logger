@@ -2,8 +2,8 @@
   "name": "gooder-console",
   "version": "0.1.0",
   "description": "Same as browser console but gooder. Configure message log levels (log, errors, mute) for individual classes or for the whole project.",
-  "main": "assembly/logger.js",
-  "types": "assemply/logger.d.ts",
+  "main": "./assembly/logger.js",
+  "types": "./assembly/logger.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	"build": "tsc",
@@ -18,7 +18,7 @@
     "logger",
     "console"
   ],
-  "author": "Jurijs Kovzels @",
+  "author": "Jurijs Kovzels @jkovzels",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jurijsk/gooder-console-logger/issues"

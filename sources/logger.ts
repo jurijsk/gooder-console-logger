@@ -12,8 +12,15 @@ interface ILogger {
 }
 
 class ConsoleLogger {
-	error: {(...data: any[]): void; (message?: any, ...optionalParams: any[]): void;};
+	/**
+	 * Sets the level of messages to output.
+	 * 
+	 * **Note** that if the instance is ontained via `getLogger()` call,
+	 * the change of the level will affect the level of all clients of the logger 
+	 * as it at is cached. 
+	 */
 	setLevel: (value: LoggerLevels) => void;
+	error: {(...data: any[]): void; (message?: any, ...optionalParams: any[]): void;};
 	log: {(...data: any[]): void; (message?: any, ...optionalParams: any[]): void;};
 	constructor(level: LoggerLevels) {
 
@@ -50,7 +57,14 @@ class LoggerMeta<T> {
 }
 
 class LoggerProviderClass {
+	/**
+	 * Sets the level of messages to output for the specified type/class.
+	 */
 	setLevel: <T>(caller: T, level: LoggerLevels) => void;
+	
+	/**
+	 * Instanciates or returns cached logger for the `caller` type/class.
+	 */
 	getLogger: <T>(caller: T) => ILogger;
 	setDefaultLevel: (value: LoggerLevels) => void;
 	constructor() {

@@ -31,7 +31,7 @@
 			"./node_modules/@types"
 		],
 		"outDir": "assembly",
-		"declaration": true
+		"declaration": true,
 	},
 	"include": [
 		"sources/**/*",
